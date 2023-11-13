@@ -1,19 +1,31 @@
 #pragma once
-#include"fruit.h"
 
-class store {
+class fruit {
 public:
-	store() {  };
-	store(int n1, int n2, int n3, int n4, float p1, float p2, float p3, float p4) {
-		apple = fruit(p1, n1);
-		pear = fruit(p2, n2);
-		peach = fruit(p3, n3);
-		mango = fruit(p4, n4);
+	// constructor
+	fruit() {
+		price = 200; many = 2;
+		day = 12;
+		i++;
 	}
+	fruit(float p, int n) {
+		price = p;
+		many = n;
+		day = 12;
+		i++;
+	}
+	fruit(float p, int n, int d) {
+		price = p;
+		many = n;
+		day = d;
+		i++;
+	}
+	// member data
+	int many, day;
+	float price;
+	static int i;
 
-	//member data
-	fruit apple, pear, peach, mango;
-
-	float total();
-	void operator*=(int);
+	// member function
+	float show();
+	void show_all();
 };
