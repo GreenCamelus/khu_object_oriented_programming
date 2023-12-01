@@ -1,3 +1,6 @@
+#include <iostream>
+#include <Windows.h>
+#include <vector>
 using namespace std;
 int main() {
     srand((unsigned)time(NULL));
